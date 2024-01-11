@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+ <div style="width:400px; height: 300px; font-size: 5rem; font-weight: 700; background-color: rgb(131, 131, 181); margin: auto; text-align: center; padding: 3rem; border-radius: 24px;" id="screen">55</div>  
+ <script defer>
+    const keyCode = document.getElementById('screen');
+    console.log(keyCode.value)
+window.addEventListener('keydown',function(e){
+console.log(e.keyCode);
+keyCode.innerText = `keyCode = ${e.keyCode}`;
+})
+console.log(keyCode);
+</script> 
+</body>
+</html>

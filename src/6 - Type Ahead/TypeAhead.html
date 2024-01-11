@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Type Ahead 👀</title>
+
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="../output.css">
+    <script src="./TypeAhead.js" defer></script>
+</head>
+
+<body class="h-full bg-sky-700">
+    <main
+        class="shadow-xl border-2 border-sky-800 bg-[var(--base)] w-1/3 m-auto flex mt-10 flex-col  text-3xl text-sky-700 text-center rounded-2xl p-8 justify-around h-1/3">
+        <form>
+            <input type="text" id="search-form-input"
+                class="shadow-lg text-center  border-2 border-sky-700 text-sky-700 bg-[var(--base)] rounded-xl p-3 mb-5 "
+                placeholder="City or State">
+                <span id="resultsNumberOutput"></span>
+            <div>
+                Cities per site:
+                <button type='checkbox' id="fivePerSiteBtn" class="bg-sky-700 text-[var(--base)] p-2  border-sky-700 rounded-2xl m-2"
+                    checked>5</button>
+                <button type='checkbox' id="tenPerSiteBtn" class="p-2  border-sky-700 rounded-2xl m-2">10</button>
+                <button type='checkbox' id="fifteenPerSiteBtn" class="p-2  border-sky-700 rounded-2xl m-2">15</button>
+            </div>
+            <button id="prevSiteBtn" class="p-1  border-sky-700 rounded-2xl m-2">prev</button>
+            <button id="nextSiteBtn" class="p-1  border-sky-700 rounded-2xl m-2">next</button>
+        </form>
+        <ul id="suggestions" class=" text-sky-700  rounded-xl px-3 mb-5 ">
+
+        </ul>
+    </main>
+    <script>
+
+
+    </script>
+</body>
+
+</html>

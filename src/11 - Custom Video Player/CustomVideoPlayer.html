@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+ 
+  <link rel="stylesheet" href="../output.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+  <script defer src="./CustomVideoPlayer.js"></script>
+</head>
+<body class="box-border m-0 p-0 flex bg-[#7A419B] min-h-100vh bg-gradient-to-tl bg-cover items-center justify-center">
+
+   <div class="player max-w-[750px] border-4 border-[rgba(0,0,0,0.2)] relative text-[0] overflow-hidden group">
+     <video class="player__video viewer w-full " src="652333414.mp4"></video>
+
+     <div class="player__controls flex absolute bottom-0 w-full  translate-y-[calc(100%-5px)] transition-all flex-wrap bg-[rgba(0,0,0,0.1)] group-hover:translate-y-0 flex-1">
+       <div class="progress flex-[10] relative flex basis-full h-1 transition-[height_0.3s] bg-[rgba(0,0,0,0.5)]  group-hover:h-4">
+        <div class="progress__filled  bg-[#ffc600] flex-none basis-0"></div>
+       </div>
+       <div class="w-[100%] flex flex-row items-center mt-1">
+       <button class="player__button toggle whitespace-nowrap bg-none   text-white  text-center text-sm p-0 px-2 cursor-pointer max-w-[50px] hover:text-black hover:bg-[#ffc600] rounded-md  " title="Toggle Play">►</button>
+       <input type="range" name="volume" class="player__slider  h-3 bg-transparent w-full my-0 mx-1 focus:outline-none " min="0" max="1" step="0.05" value="1">
+       <input type="range" name="playbackRate" class="player__slider  h-3 bg-transparent w-full my-0 mx-1 focus:outline-none " min="0.5" max="2" step="0.1" value="1">
+       <button data-skip="-10" class="player__button bg-none   rounded-md text-white text-center w-fit p-0 px-3 cursor-pointer  text-sm max-w-[50px] hover:text-black hover:bg-[#ffc600] mr-1 whitespace-nowrap">« 10s</button>
+       <button data-skip="25" class="player__button bg-none   rounded-md text-white text-center w-fit p-0 px-3 cursor-pointer   max-w-[50px] hover:text-black hover:bg-[#ffc600] text-sm whitespace-nowrap ">25s »</button>
+       <button  class="fullscreen bg-none   rounded-md text-white text-center w-fit  px-3 cursor-pointer   max-w-[50px] hover:text-black hover:bg-[#ffc600] text-sm whitespace-nowrap ">Full</button>
+      </div>
+     </div>
+   </div>
+
+  
+</body>
+</html>

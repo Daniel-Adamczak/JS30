@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script defer src="cssVariables.js"></script>
+</head>
+
+<body class="bg-purple-950 ">
+    <h1 class="text-purple-200 text-3xl font-bold text-center my-5 rounded-xl bg-purple-600 p-6 w-fit m-auto">Update CSS
+        Variables in <span class="text-[var(--base)]">JS</span></h1>
+
+
+    <div class="controls m-auto text-purple-200 text-center font-bold text-lg">
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+<br>
+        <label for="base">Base Color</label>
+        <input id="base" type="color" name="base" value="#ffc600">
+    </div>
+
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" class="mx-auto bg-[var(--base)] p-[var(--spacing)] blur-[var(--blur)]">
+
+</body>
+
+</html>
